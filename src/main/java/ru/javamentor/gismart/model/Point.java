@@ -5,15 +5,17 @@ public class Point {
 	private int x;
 	private int y;
 	private String color;
+	private boolean isPhoto;
 
 	public Point() {
-
+		isPhoto = false;
 	}
 
 	public Point(int x, int y, String color) {
 		this.x = x;
 		this.y = y;
 		this.color = color;
+		isPhoto = false;
 	}
 
 	public int getX() {
