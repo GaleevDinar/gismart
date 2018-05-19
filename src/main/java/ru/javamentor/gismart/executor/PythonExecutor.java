@@ -1,9 +1,5 @@
 package ru.javamentor.gismart.executor;
 
-import org.python.core.PyObject;
-import org.python.core.PyString;
-import org.python.util.PythonInterpreter;
-
 import java.io.IOException;
 
 public class PythonExecutor {
@@ -16,3 +12,4 @@ public class PythonExecutor {
 		}
 	}
 }
+
