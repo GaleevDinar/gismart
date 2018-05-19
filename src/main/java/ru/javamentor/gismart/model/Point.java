@@ -5,17 +5,18 @@ public class Point {
 	private int x;
 	private int y;
 	private String color;
-	private boolean isPhoto;
+	private int photoId;
+
 
 	public Point() {
-		isPhoto = false;
+		photoId = 0;
 	}
 
 	public Point(int x, int y, String color) {
 		this.x = x;
 		this.y = y;
 		this.color = color;
-		isPhoto = false;
+		photoId = 0;
 	}
 
 	public int getX() {
@@ -40,6 +41,14 @@ public class Point {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+	public int getPhotoId() {
+		return photoId;
+	}
+
+	public void setPhotoId(int photoId) {
+		this.photoId = photoId;
 	}
 
 	@Override
