@@ -32,4 +32,20 @@ public class GardenController {
 		}
 	}
 
+	@GetMapping("/setPhoto/{id}")
+	public void setPhoto(@PathVariable("id") int id) {
+		if (id == 1) {
+			getPointByXY(2, 2).setPhotoId(1);
+		}
+		if (id == 2) {
+			getPointByXY(3, 3).setPhotoId(2);
+		}
+	}
+
+
+	private Point getPointByXY(int x, int y) {
+		return DataBase.pointPositions.get(
+				DataBase.pointPositions.indexOf(new Point(x,y,"")));
+	}
+
 }
