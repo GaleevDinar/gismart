@@ -11,7 +11,7 @@ import javax.xml.crypto.Data;
 import java.util.LinkedList;
 import java.util.List;
 
-@Component
+//@Component
 public class TestDataInit implements ApplicationListener<ContextRefreshedEvent> {
 
 	public void init() {
